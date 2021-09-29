@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>Job_CargaDados_P7</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2021&#x2f;04&#x2f;08 20&#x3a;20&#x3a;55.607</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2021&#x2f;04&#x2f;08 20&#x3a;20&#x3a;55.607</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Con_DW</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>dw</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4fc4bfc258bc7f98a</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description>A job starts to process here.</description>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>50</xloc>
+      <yloc>50</yloc>
+      </entry>
+    <entry>
+      <name>Criar tabela &#x5b;sa_produto&#x5d;</name>
+      <description>This executes the SQL to create table &#x5b;Con_DW&#x5d;.&#x5b;sa_produto&#x5d;</description>
+      <type>SQL</type>
+      <sql>DROP TABLE sa_produto&#x3b;&#xd;&#xa;&#xd;&#xa;CREATE TABLE sa_produto&#xd;&#xa;&#x28;&#xd;&#xa;  produtoid DOUBLE PRECISION&#xd;&#xa;, contaprodutoid DOUBLE PRECISION&#xd;&#xa;, nomeproduto TEXT&#xd;&#xa;, fornecedorid DOUBLE PRECISION&#xd;&#xa;, categoriaid DOUBLE PRECISION&#xd;&#xa;, quantidadeporunidade DOUBLE PRECISION&#xd;&#xa;, unidadesemestoque DOUBLE PRECISION&#xd;&#xa;, unidadesporpedidos DOUBLE PRECISION&#xd;&#xa;&#x29;&#xd;&#xa;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Con_DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>250</xloc>
+      <yloc>50</yloc>
+      </entry>
+    <entry>
+      <name>Copiar dados a&#x3a; &#x5b;sa_produto&#x5d;</name>
+      <description>This job entry executes the transformation to copy data&#xd;&#xa;desde&#x3a; &#x5b;Con_SA&#x5d;.&#x5b;sa_produto&#x5d;&#xd;&#xa;a&#x3a; &#x5b;Con_DW&#x5d;.&#x5b;sa_produto&#x5d;</description>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x5c;copy_con_sasa_produto_to_con_dw.ktr</filename>
+      <transname>copy_con_sasa_produto_to_con_dw</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>650</xloc>
+      <yloc>50</yloc>
+      </entry>
+    <entry>
+      <name>Criar tabela &#x5b;sa_vendedor&#x5d;</name>
+      <description>This executes the SQL to create table &#x5b;Con_DW&#x5d;.&#x5b;sa_vendedor&#x5d;</description>
+      <type>SQL</type>
+      <sql>DROP TABLE sa_vendedor&#x3b;&#xd;&#xa;&#xd;&#xa;CREATE TABLE sa_vendedor&#xd;&#xa;&#x28;&#xd;&#xa;  funcionarioid DOUBLE PRECISION&#xd;&#xa;, vendedorid DOUBLE PRECISION&#xd;&#xa;, vendedor TEXT&#xd;&#xa;, titulovendedor TEXT&#xd;&#xa;&#x29;&#xd;&#xa;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Con_DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>250</xloc>
+      <yloc>150</yloc>
+      </entry>
+    <entry>
+      <name>Copiar dados a&#x3a; &#x5b;sa_vendedor&#x5d;</name>
+      <description>This job entry executes the transformation to copy data&#xd;&#xa;desde&#x3a; &#x5b;Con_SA&#x5d;.&#x5b;sa_vendedor&#x5d;&#xd;&#xa;a&#x3a; &#x5b;Con_DW&#x5d;.&#x5b;sa_vendedor&#x5d;</description>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x5c;copy_con_sasa_vendedor_to_con_dw.ktr</filename>
+      <transname>copy_con_sasa_vendedor_to_con_dw</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>650</xloc>
+      <yloc>150</yloc>
+      </entry>
+    <entry>
+      <name>Criar tabela &#x5b;sa_pedido&#x5d;</name>
+      <description>This executes the SQL to create table &#x5b;Con_DW&#x5d;.&#x5b;sa_pedido&#x5d;</description>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;CREATE TABLE sa_pedido&#xd;&#xa;&#x28;&#xd;&#xa;  clienteid DOUBLE PRECISION&#xd;&#xa;, transportadorid DOUBLE PRECISION&#xd;&#xa;, pedidoid DOUBLE PRECISION&#xd;&#xa;, contapedidoid DOUBLE PRECISION&#xd;&#xa;, funcionarioid DOUBLE PRECISION&#xd;&#xa;, funcionariovendedor DOUBLE PRECISION&#xd;&#xa;, datapedido  TEXT&#xd;&#xa;, ano DOUBLE PRECISION&#xd;&#xa;, dia DOUBLE PRECISION&#xd;&#xa;, trimestre TEXT&#xd;&#xa;, frete DOUBLE PRECISION&#xd;&#xa;&#x29;&#xd;&#xa;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Con_DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>250</xloc>
+      <yloc>250</yloc>
+      </entry>
+    <entry>
+      <name>Copiar dados a&#x3a; &#x5b;sa_pedido&#x5d;</name>
+      <description>This job entry executes the transformation to copy data&#xd;&#xa;desde&#x3a; &#x5b;Con_SA&#x5d;.&#x5b;sa_pedido&#x5d;&#xd;&#xa;a&#x3a; &#x5b;Con_DW&#x5d;.&#x5b;sa_pedido&#x5d;</description>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x5c;copy_con_sasa_pedido_to_con_dw.ktr</filename>
+      <transname>copy_con_sasa_pedido_to_con_dw</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>650</xloc>
+      <yloc>250</yloc>
+      </entry>
+    <entry>
+      <name>Criar tabela &#x5b;sa_detalhespedidos&#x5d;</name>
+      <description>This executes the SQL to create table &#x5b;Con_DW&#x5d;.&#x5b;sa_detalhespedidos&#x5d;</description>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;&#xd;&#xa;CREATE TABLE sa_detalhespedidos&#xd;&#xa;&#x28;&#xd;&#xa;  pedidoid DOUBLE PRECISION&#xd;&#xa;, produtoid DOUBLE PRECISION&#xd;&#xa;, precounitario DOUBLE PRECISION&#xd;&#xa;, quantidade DOUBLE PRECISION&#xd;&#xa;, desconto DOUBLE PRECISION&#xd;&#xa;, venda_liquida DOUBLE PRECISION&#xd;&#xa;, custounitario DOUBLE PRECISION&#xd;&#xa;&#x29;&#xd;&#xa;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Con_DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>250</xloc>
+      <yloc>350</yloc>
+      </entry>
+    <entry>
+      <name>Copiar dados a&#x3a; &#x5b;sa_detalhespedidos&#x5d;</name>
+      <description>This job entry executes the transformation to copy data&#xd;&#xa;desde&#x3a; &#x5b;Con_SA&#x5d;.&#x5b;sa_detalhespedidos&#x5d;&#xd;&#xa;a&#x3a; &#x5b;Con_DW&#x5d;.&#x5b;sa_detalhespedidos&#x5d;</description>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x5c;copy_con_sasa_detalhespedidos_to_con_dw.ktr</filename>
+      <transname>copy_con_sasa_detalhespedidos_to_con_dw</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>650</xloc>
+      <yloc>350</yloc>
+      </entry>
+    <entry>
+      <name>Criar tabela &#x5b;sa_cliente&#x5d;</name>
+      <description>This executes the SQL to create table &#x5b;Con_DW&#x5d;.&#x5b;sa_cliente&#x5d;</description>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;&#xd;&#xa;CREATE TABLE sa_cliente&#xd;&#xa;&#x28;&#xd;&#xa;  clienteid DOUBLE PRECISION&#xd;&#xa;, nomeempresa TEXT&#xd;&#xa;, nomecontato TEXT&#xd;&#xa;, endereco TEXT&#xd;&#xa;, cidade TEXT&#xd;&#xa;, estado TEXT&#xd;&#xa;, codigopostal TEXT&#xd;&#xa;, pais TEXT&#xd;&#xa;, fone TEXT&#xd;&#xa;, fax TEXT&#xd;&#xa;&#x29;&#xd;&#xa;&#x3b;</sql>
+      <useVariableSubstitution>F</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Con_DW</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>250</xloc>
+      <yloc>450</yloc>
+      </entry>
+    <entry>
+      <name>Copiar dados a&#x3a; &#x5b;sa_cliente&#x5d;</name>
+      <description>This job entry executes the transformation to copy data&#xd;&#xa;desde&#x3a; &#x5b;Con_SA&#x5d;.&#x5b;sa_cliente&#x5d;&#xd;&#xa;a&#x3a; &#x5b;Con_DW&#x5d;.&#x5b;sa_cliente&#x5d;</description>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x5c;copy_con_sasa_cliente_to_con_dw.ktr</filename>
+      <transname>copy_con_sasa_cliente_to_con_dw</transname>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>650</xloc>
+      <yloc>450</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>Criar tabela &#x5b;sa_produto&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Criar tabela &#x5b;sa_produto&#x5d;</from>
+      <to>Copiar dados a&#x3a; &#x5b;sa_produto&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copiar dados a&#x3a; &#x5b;sa_produto&#x5d;</from>
+      <to>Criar tabela &#x5b;sa_vendedor&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Criar tabela &#x5b;sa_vendedor&#x5d;</from>
+      <to>Copiar dados a&#x3a; &#x5b;sa_vendedor&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copiar dados a&#x3a; &#x5b;sa_vendedor&#x5d;</from>
+      <to>Criar tabela &#x5b;sa_pedido&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Criar tabela &#x5b;sa_pedido&#x5d;</from>
+      <to>Copiar dados a&#x3a; &#x5b;sa_pedido&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copiar dados a&#x3a; &#x5b;sa_pedido&#x5d;</from>
+      <to>Criar tabela &#x5b;sa_detalhespedidos&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Criar tabela &#x5b;sa_detalhespedidos&#x5d;</from>
+      <to>Copiar dados a&#x3a; &#x5b;sa_detalhespedidos&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copiar dados a&#x3a; &#x5b;sa_detalhespedidos&#x5d;</from>
+      <to>Criar tabela &#x5b;sa_cliente&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Criar tabela &#x5b;sa_cliente&#x5d;</from>
+      <to>Copiar dados a&#x3a; &#x5b;sa_cliente&#x5d;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>
